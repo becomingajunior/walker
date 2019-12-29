@@ -100,29 +100,40 @@ textarea {
 
    html {
     font-size: 16px;
+    width: 100%;
   }
    
   body {
     display: flex;
+    flex-wrap: wrap;
     font-size: 1.2em;
     font-family: 'Playfair Display', serif;
     color: black;
     text-align: left;
     background-color: rgb(234, 227, 234);
+    width: 100%;
   }
    
   h1 {
+    display: inline-flexbox;
+    flex-wrap: wrap;
     font-family: 'Poppins', serif;
     font-size: 2.25em;
     justify-content: left;
     color: rgb(181, 99, 87);
   }
 
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
   h3 {
     font-family: 'Poppins', serif;
     font-size: 1.5em;
     margin-bottom: 1%;
-    color: hsl(111, 25%, 67.5%);
+    color: rgb(76, 92, 73);
   }
 
   p {
@@ -131,7 +142,7 @@ textarea {
   }
 
   a {
-    color: hsl(111, 25%, 67.5%);
+    color: rgb(66, 82, 63);
   }
 
   a:hover {
@@ -141,6 +152,15 @@ textarea {
   main {
     margin-left: 20%;
     margin-right: 20%
+  }
+
+  span {
+    display: inline-block;
+    letter-spacing: .075em;
+  }
+
+  .naacp {
+    margin-bottom: 7%;
   }
 
   aside h3 {
@@ -162,16 +182,31 @@ textarea {
     margin-top: 3%;
   }
 
-  .content-wrapper {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    background-color: cadetblue;
+  .death-legacy {
+    margin-bottom: 7%;
   }
 
-  footer {
+  #tribute-info {
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(76, 92, 73);
+  }
+
+  footer p {
+    color: white;
     display: flex;
-    margin-top: 5%; 
+    flex-wrap: wrap;
+    margin: 4% 6% 6% 6%; 
+    justify-content: center;
+  }
+
+  footer a {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
   }
 
   footer a:hover {
