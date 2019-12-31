@@ -115,7 +115,6 @@ textarea {
   }
    
   h1 {
-    display: inline-flexbox;
     flex-wrap: wrap;
     font-family: 'Poppins', serif;
     font-size: 2.25em;
@@ -124,9 +123,24 @@ textarea {
   }
 
   img {
-    max-width: 100%;
-    display: block;
-    height: auto;
+    display: flex;
+    max-width: 25%;
+    border: 5px solid rgb(181, 99, 87);
+    margin: auto;
+  }
+
+  figcaption {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  figcaption p {
+    font-size: .8em;
+    font-style: italic;
+  }
+
+  .early-life {
+    margin-top: 7%;
   }
 
   h3 {
@@ -187,7 +201,6 @@ textarea {
   }
 
   #tribute-info {
-    display: inline-flexbox;
     flex-wrap: wrap;
     width: 100%;
     margin: 0;
